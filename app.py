@@ -96,6 +96,7 @@ def upload_register():
         file = request.files['file']
         file_path = secure_filename(file.filename)
         file.save(file_path)
+        
         # upload_cloud()関数を実装する
         # DBに登録するのは、アップロード時のタイトルとpngファイル
         result_path = upload_cloud(file_path)
