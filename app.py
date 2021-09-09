@@ -1,3 +1,4 @@
+// 改定版です(2021.09) // 
 from flask import (Flask, render_template, request, redirect,
                    url_for, flash, send_from_directory, session)
 from werkzeug.utils import secure_filename
